@@ -1,6 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 
-const Wallet = () => {
+const Referral = () => {
   const { language } = useLanguage();
 
   const texts = {
@@ -11,4 +11,4 @@ const Wallet = () => {
   return <div className="mt-[-100px]">{texts[language]}</div>;
 };
 
-export default Wallet;
+export default Referral;

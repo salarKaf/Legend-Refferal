@@ -117,10 +117,31 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='flex justify-center items-center mb-52'>
+      <div className='flex justify-center items-center mb-8'>
         <MonthlyEarningsChart></MonthlyEarningsChart>
 
       </div>
+
+
+
+      {/* Total Referrals Card */}
+      <div className="bg-white rounded-xl border border-black/40 shadow-2xl p-4 mb-16 flex items-center justify-between w-full max-w-md mx-auto">
+        {/* آیکون ارجاع */}
+        <div className="flex-shrink-0">
+          <img
+            src="/public/Images/icons8-referral-64(2).png"
+            alt="Referral Icon"
+            className="w-16 h-16 object-contain"
+          />
+        </div>
+
+        {/* متن سمت راست */}
+        <div className="text-right flex-1 pr-4">
+          <div className="text-2xl font-bold text-gray-800">12 <span className="text-sm font-medium text-gray-500">people</span></div>
+          <div className="text-lg font-bold text-black">Total Referrals</div>
+        </div>
+      </div>
+
     </div>
   );
 };

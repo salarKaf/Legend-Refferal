@@ -12,7 +12,6 @@ const Profile = () => {
   return <div className="mt-[-100px]">{texts[language]}
   
   
-        <MonthlyEarningsChart></MonthlyEarningsChart>
 </div>;
 };
 

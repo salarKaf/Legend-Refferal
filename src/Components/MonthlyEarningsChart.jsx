@@ -71,7 +71,7 @@ const MonthlyEarningsChart = () => {
       }
 
       return (
-        <div className="bg-gray-800 text-white p-3 rounded-lg shadow-lg border">
+        <div className="bg-gray-800 text-white p-3 rounded-lg border">
           <p className="font-semibold text-sm sm:text-base">{data.month}</p>
           <p className="text-yellow-400 text-sm sm:text-base">{`درآمد: ${data.earnings}`}</p>
           <p className={`text-xs sm:text-sm ${trendColor}`}>
@@ -83,7 +83,7 @@ const MonthlyEarningsChart = () => {
   };
 
   return (
-    <div className="w-full relative flex items-center justify-center mb-5 ">
+    <div className="w-full relative flex items-center justify-center shadow-xl rounded-2xl">
       <div className="w-full max-w-4xl bg-white rounded-2xl border border-black/40 relative">
         {/* هدر */}
         <div className="mt-8">

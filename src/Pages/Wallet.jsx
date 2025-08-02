@@ -1,5 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 
+import CountdownTimer from '../Components/Timer';
 const Wallet = () => {
   const { language } = useLanguage();
 
@@ -8,7 +9,14 @@ const Wallet = () => {
     fa: "خوش آمدید به صفحه اصلی"
   };
 
-  return <div className="mt-[-100px]">{texts[language]}</div>;
+  return (
+
+
+    <div className="relative -mt-[105px] z-20 px-6">
+
+      <CountdownTimer></CountdownTimer>
+    </div>
+  )
 };
 
 export default Wallet;

@@ -12,7 +12,7 @@ const Wallet = () => {
   return (
 
 
-    <div className="relative -mt-[105px] z-20 px-6">
+    <div className="relative -mt-[105px] z-20 px-6 ">
 
       <CountdownTimer></CountdownTimer>
     </div>

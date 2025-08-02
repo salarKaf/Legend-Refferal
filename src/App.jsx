@@ -14,9 +14,9 @@ function App() {
         {/* container کلی برای چسباندن فوتر به پایین */}
         <div className="flex flex-col min-h-screen">
           
-          <Header />
+          <Header/>
 
-          <main className="flex-grow">
+          <main className="flex-grow bg-[#EEEEEE]">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />

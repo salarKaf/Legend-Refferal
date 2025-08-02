@@ -47,18 +47,18 @@ const LegendHeader = ({ onLanguageChange }) => {
 
 
     return (
-        <div className={`relative w-full ${language === 'fa' ? 'rtl' : 'ltr'}`}>
+        <div className={`relative  w-full ${language === 'fa' ? 'rtl' : 'ltr'}` }>
             {/* Header با گرادیانت */}
-            <div className="relative h-[370px] overflow-visible">
+            <div className="relative h-[370px] overflow-visible  ">
                 {/* پس‌زمینه با گرادیانت */}
                 <div
-                    className="absolute inset-0"
+                    className="absolute inset-0 "
                     style={{
                         background: 'linear-gradient(to bottom, #222831 29%, #2E3643 47%, #3E495A 70%, #697B97 100%)'
                     }}
                 >
                     {/* شکل منحنی پایین */}
-                    <div className="absolute bottom-0 w-full">
+                    <div className="absolute bottom-0 w-full ">
                         <svg
                             viewBox="0 0 1440 100"
                             className="w-full h-24"
@@ -66,14 +66,14 @@ const LegendHeader = ({ onLanguageChange }) => {
                         >
                             <path
                                 d="M0,0 C480,100 960,100 1440,0 L1440,100 L0,100 Z"
-                                fill="white"
+                                fill="#EEEEEE"
                             />
                         </svg>
                     </div>
                 </div>
 
                 {/* محتوای داخل هدر */}
-                <div className="relative z-10 px-6 py-6 h-full">
+                <div className="relative z-10 px-6 py-6 h-full ">
                     <div className="flex justify-between items-start h-full">
 
                         {/* بالا سمت چپ - پروفایل و ساعت شنی */}

@@ -84,7 +84,7 @@ const MonthlyEarningsChart = () => {
 
   return (
     <div className="w-full relative flex items-center justify-center shadow-xl rounded-2xl">
-      <div className="w-full max-w-4xl bg-white rounded-2xl border border-black/40 relative">
+      <div className="w-full max-w-4xl bg-[#EEEEEE] rounded-2xl border border-black/40 relative">
         {/* هدر */}
         <div className="mt-8">
           <div className="flex items-start justify-end gap-1 mr-5">
@@ -95,7 +95,7 @@ const MonthlyEarningsChart = () => {
         </div>
 
         {/* نمودار */}
-        <div className=" bg-white rounded-xl sm:p-20 relative mb-1" style={{ outline: 'none' }}>
+        <div className=" bg-[#EEEEEE] rounded-xl sm:p-20 relative mb-1" style={{ outline: 'none' }}>
           <ResponsiveContainer width="100%" height={400} >
             <BarChart
               data={processedData}

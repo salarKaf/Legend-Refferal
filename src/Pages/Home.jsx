@@ -28,11 +28,11 @@ const Home = () => {
   return (
     <div className="relative -mt-[105px] z-20 px-6">
       {/* Main Card */}
-      <div className="relative bg-white rounded-2xl border border-black/40 shadow-lg p-8 mb-8">
+      <div className="relative bg-[#EEEEEE] rounded-2xl border border-black/40 shadow-lg p-8 mb-8">
         {/* Today Badge */}
         <div className="absolute -top-12 left-4 transform -rotate-12">
           <div className="relative">
-            <div className="relative bg-white rounded-2xl px-9 py-3 shadow-lg border border-black/50">
+            <div className="relative bg-[#EEEEEE] rounded-2xl px-9 py-3 shadow-lg border border-black/50">
               <span className="text-xl font-bold text-gray-800">10$ {texts[language].today}</span>
               <div className="absolute bottom-2 left-4 w-2 h-2 bg-black rounded-full"></div>
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
       {/* Group Cards - در یک ردیف و کوچکتر */}
       <div className="flex gap-4 mb-8 ">
         {/* Group 02 */}
-        <div className="flex-1 bg-white rounded-xl border  border-black/40 shadow-lg p-4">
+        <div className="flex-1 bg-[#EEEEEE] rounded-xl border  border-black/40 shadow-lg p-4">
           <div className="flex items-center gap-4">
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
@@ -96,7 +96,7 @@ const Home = () => {
         </div>
 
         {/* Group 01 */}
-        <div className="flex-1 bg-white rounded-xl border border-black/40 shadow-lg p-4">
+        <div className="flex-1 bg-[#EEEEEE] rounded-xl border border-black/40 shadow-lg p-4">
           <div className="flex items-center gap-4">
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
@@ -125,7 +125,7 @@ const Home = () => {
 
 
       {/* Total Referrals Card */}
-      <div className="bg-white rounded-xl border border-black/40 shadow-2xl p-4 mb-16 flex items-center justify-between w-full max-w-md mx-auto">
+      <div className="bg-[#EEEEEE] rounded-xl border border-black/40 shadow-2xl p-4 mb-16 flex items-center justify-between w-full max-w-md mx-auto">
         {/* آیکون ارجاع */}
         <div className="flex-shrink-0">
           <img

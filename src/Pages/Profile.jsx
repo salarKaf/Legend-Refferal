@@ -1,4 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
+import MonthlyEarningsChart from '../Components/MonthlyEarningsChart.jsx';
 
 const Profile = () => {
   const { language } = useLanguage();
@@ -8,7 +9,11 @@ const Profile = () => {
     fa: "خوش آمدید به صفحه اصلی"
   };
 
-  return <div className="mt-[-100px]">{texts[language]}</div>;
+  return <div className="mt-[-100px]">{texts[language]}
+  
+  
+        <MonthlyEarningsChart></MonthlyEarningsChart>
+</div>;
 };
 
 export default Profile;

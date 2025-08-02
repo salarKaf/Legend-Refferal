@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from "../context/LanguageContext";
-
+import MonthlyEarningsChart from '../Components/MonthlyEarningsChart.jsx';
 const Home = () => {
   const { language } = useLanguage();
 
@@ -73,9 +73,9 @@ const Home = () => {
       </div>
 
       {/* Group Cards - در یک ردیف و کوچکتر */}
-      <div className="flex gap-4 mb-8">
+      <div className="flex gap-4 mb-8 ">
         {/* Group 02 */}
-        <div className="flex-1 bg-white rounded-xl shadow-md border border-gray-200 p-4">
+        <div className="flex-1 bg-white rounded-xl border  border-black/40 shadow-lg p-4">
           <div className="flex items-center gap-4">
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
@@ -85,7 +85,7 @@ const Home = () => {
                 className="w-16 h-16 rounded-full object-cover"
               />
             </div>
-            
+
             {/* محتوای سمت راست */}
             <div className="flex-1 text-right">
               <h3 className="text-lg font-bold text-gray-800 mb-1">{texts[language].group02}</h3>
@@ -96,7 +96,7 @@ const Home = () => {
         </div>
 
         {/* Group 01 */}
-        <div className="flex-1 bg-white rounded-xl shadow-md border border-gray-200 p-4">
+        <div className="flex-1 bg-white rounded-xl border border-black/40 shadow-lg p-4">
           <div className="flex items-center gap-4">
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
@@ -106,7 +106,7 @@ const Home = () => {
                 className="w-16 h-16 rounded-full object-cover"
               />
             </div>
-            
+
             {/* محتوای سمت راست */}
             <div className="flex-1 text-right">
               <h3 className="text-lg font-bold text-gray-800 mb-1">{texts[language].group01}</h3>
@@ -115,6 +115,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='flex justify-center items-center mb-52'>
+        <MonthlyEarningsChart></MonthlyEarningsChart>
+
       </div>
     </div>
   );

@@ -83,13 +83,13 @@ const MonthlyEarningsChart = () => {
   };
 
   return (
-    <div className="w-full relative flex items-center justify-center shadow-xl rounded-2xl">
+    <div className="w-full relative flex items-center justify-center shadow-xl rounded-2xl ">
       <div className="w-full max-w-4xl bg-[#EEEEEE] rounded-2xl border border-black/40 relative">
         {/* هدر */}
         <div className="mt-8">
           <div className="flex items-start justify-end gap-1 mr-5">
             <h1 className="text-2xl font-bold text-gray-800" >Monthly Earnings</h1>
-            <img src='/public/Images/icons8-euro-money-50(1).png' className="w-8 h-8"></img>
+            <img src='/Images/icons8-euro-money-50(1).png' className="w-8 h-8"></img>
 
           </div>
         </div>

@@ -5,22 +5,22 @@ const MyReferrals = () => {
     const referralData = [
         // سطح اول - بیشتر از 6 تا برای تست
         [
-            { id: 1, avatar: null, amount: 30 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 3, avatar: null, amount: 20  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 4, avatar: null, amount: 20  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 2, avatar: null, amount: 30  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 5, avatar: null, amount: 20  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 6, avatar: null, amount: 20  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 7, avatar: null, amount: 10  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 8, avatar: null, amount: 10  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 9, avatar: null, amount: 10  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 10, avatar: null, amount: 10 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 11, avatar: null, amount: 10 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 12, avatar: null, amount: 10 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 13, avatar: null, amount: 10 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 14, avatar: null, amount: 10 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 15, avatar: null, amount: 5  , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 16, avatar: null, amount: 25 , avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' }
+            { id: 1, avatar: null, amount: 30 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 3, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 4, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 2, avatar: null, amount: 30  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 5, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 6, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 7, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 8, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 9, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 10, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 11, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 12, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 13, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 14, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 15, avatar: null, amount: 5  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
+            { id: 16, avatar: null, amount: 25 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' }
         ],
     ];
 
@@ -40,7 +40,7 @@ const MyReferrals = () => {
             {/* مبلغ دلار - کوچیک‌تر شده */}
             <div className="mt-2 bg-white border-2 border-gray-300 rounded-full px-2 py-[0.8px] flex items-center gap-1 shadow-sm">
                 <span className="font-bold text-sm text-gray-800">{person.amount}</span>
-                <img src='/public/Images/icons8-coin-64.png' className="w-[13px] h-[13px] text-yellow-500" />
+                <img src='/Images/icons8-coin-64.png' className="w-[13px] h-[13px] text-yellow-500" />
             </div>
         </div>
     );
@@ -110,7 +110,7 @@ const MyReferrals = () => {
                 <div className="flex justify-end  space-x-2 mb-6  sm:mb-12 ">
                     <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 flex items-center justify-center gap-2 sm:gap-3">
                         My Referrals
-                        <img src='/public/Images/icons8-user-30.png' className="w-8 h-8 sm:w-8 sm:h-8 " />
+                        <img src='/Images/icons8-user-30.png' className="w-8 h-8 sm:w-8 sm:h-8 " />
                     </h1>
                 </div>
 

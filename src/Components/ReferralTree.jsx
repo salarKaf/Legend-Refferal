@@ -8,24 +8,24 @@ const ReferralTree = () => {
   const referralData = {
     group01: {
       root: {
-        avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png', // Replace with your image URL
+        avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png', // Replace with your image URL
         name: 'You'
       },
       level2: [
         {
-          avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۴۵۴۴۳۰.png', // Replace with actual image
+          avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۴۵۴۴۳۰.png', // Replace with actual image
           name: 'Child 1',
           children: [
-            { avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۸۰۰۰۸۸۸۱.png', name: 'Grandchild 1' },
-            { avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۹۴۰۵۰۹.png', name: 'Grandchild 2' }
+            { avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۸۰۰۰۸۸۸۱.png', name: 'Grandchild 1' },
+            { avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۹۴۰۵۰۹.png', name: 'Grandchild 2' }
           ]
         },
         {
-          avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۴۵۴۴۳۰.png', // Replace with actual image
+          avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۴۵۴۴۳۰.png', // Replace with actual image
           name: 'Child 2',
           children: [
-            { avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۲۴۵۷۳۷.png', name: 'Grandchild 3' },
-            { avatar: '/public/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۹۴۰۵۰۹.png', name: 'Grandchild 4' }
+            { avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۲۴۵۷۳۷.png', name: 'Grandchild 3' },
+            { avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۴۹۴۰۵۰۹.png', name: 'Grandchild 4' }
           ]
         }
       ]
@@ -82,14 +82,14 @@ const ReferralTree = () => {
 
   const TreeLevel = ({ data }) => {
     return (
-      <div className="flex flex-col items-center space-y-0">
+      <div className="flex flex-col items-center space-y-0 ">
         {/* Level 1 - Root User (You) */}
         <div className="flex flex-col items-center">
           <Avatar user={data.root} size="large" />
         </div>
 
         {/* Main vertical connection line from root - shortened */}
-        <div className="w-px h-4 bg-black"></div>
+        <div className="w-px h-4 bg-black "></div>
 
         {/* Level 2 Container */}
         <div className="relative">
@@ -144,7 +144,7 @@ const ReferralTree = () => {
       <div className="mb-2">
         <div className="flex justify-end items-center space-x-2 mb-6">
           <h1 className="text-2xl font-bold text-[#222831]">Referral Tree</h1>
-          <img src='/public/Images/icons8-centralized-network-50.png' className=" w-8 h-8" size={28} />
+          <img src='/Images/icons8-centralized-network-50.png' className=" w-8 h-8" size={28} />
         </div>
 
         {/* Full width Group Tabs - stretched across page */}

@@ -26,7 +26,7 @@ const Home = () => {
   };
 
   return (
-    <div className="relative -mt-[105px] z-20 px-6">
+    <div className="relative -mt-[105px] z-20 px-6  ">
       {/* Main Card */}
       <div className="relative bg-[#EEEEEE] rounded-2xl border border-black/40 shadow-lg p-8 mb-8">
         {/* Today Badge */}
@@ -52,7 +52,7 @@ const Home = () => {
           {/* Profile Image */}
           <div className="">
             <img
-              src="/public/Images/dollar-money-coins-gold-icon-vector-illustration_10613260.png"
+              src="/Images/dollar-money-coins-gold-icon-vector-illustration_10613260.png"
               alt="Profile"
               className="w-[110px] h-[90px]"
             />
@@ -80,7 +80,7 @@ const Home = () => {
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
               <img
-                src="/public/Images/group(1).png" // آدرس عکس خودت رو اینجا بذار
+                src="/Images/group(1).png" // آدرس عکس خودت رو اینجا بذار
                 alt="Group 02 Profile"
                 className="w-16 h-16 rounded-full object-cover"
               />
@@ -101,7 +101,7 @@ const Home = () => {
             {/* عکس سمت چپ */}
             <div className="flex-shrink-0">
               <img
-                src="/public/Images/group(1).png" // آدرس عکس خودت رو اینجا بذار
+                src="/Images/group(1).png" // آدرس عکس خودت رو اینجا بذار
                 alt="Group 01 Profile"
                 className="w-16 h-16 rounded-full object-cover"
               />
@@ -129,7 +129,7 @@ const Home = () => {
         {/* آیکون ارجاع */}
         <div className="flex-shrink-0">
           <img
-            src="/public/Images/icons8-referral-64(2).png"
+            src="/Images/icons8-referral-64(2).png"
             alt="Referral Icon"
             className="w-16 h-16 object-contain"
           />

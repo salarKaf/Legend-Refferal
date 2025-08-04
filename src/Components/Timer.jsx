@@ -122,7 +122,7 @@ const CountdownTimer = () => {
             </div>
 
             {/* Timer display */}
-            <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="flex items-center justify-center gap-3 mb-8">
                 <AnimatedDigit value={timeLeft.days} label="Days" />
                 <div className="w-0.5 h-16 bg-gradient-to-b from-gray-300 to-gray-700"></div>
                 <AnimatedDigit value={timeLeft.hours} label="Hours" />
@@ -133,7 +133,7 @@ const CountdownTimer = () => {
             </div>
 
             {/* Description text */}
-            <div className="text-center text-gray-600 text-sm">
+            <div className="text-center text-gray-900 text-md">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
         </div>

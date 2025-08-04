@@ -12,11 +12,11 @@ function App() {
     <LanguageProvider>
       <Router>
         {/* container کلی برای چسباندن فوتر به پایین */}
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-[#EEEEEE] ">
           
           <Header/>
 
-          <main className="flex-grow bg-[#EEEEEE]">
+          <main className="flex-grow  mb-28">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />

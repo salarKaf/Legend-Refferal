@@ -1,6 +1,7 @@
 import { useLanguage } from "../context/LanguageContext";
 import MonthlyEarningsChart from '../Components/MonthlyEarningsChart.jsx';
-
+import ReferralLinkGenerator from '../Components/GenerateLink.jsx'
+import UserProfileCard from '../Components/UserProfileCard.jsx'
 const Profile = () => {
   const { language } = useLanguage();
 
@@ -9,7 +10,10 @@ const Profile = () => {
     fa: "خوش آمدید به صفحه اصلی"
   };
 
-  return <div className="mt-[-100px]">{texts[language]}
+  return <div className="relative  -mt-[105px] z-20 px-6  mb-8">
+
+    <ReferralLinkGenerator></ReferralLinkGenerator>
+    <UserProfileCard></UserProfileCard>
   
   
 </div>;

@@ -82,7 +82,7 @@ const LegendHeader = ({ onLanguageChange }) => {
                                 className="p-3 rounded-full cursor-pointer"
                                 onClick={() => navigate("/profile")}
                             >
-                                <img src='/public/Images/icons8-user-48.png' className="w-10 h-10" alt="Profile" />
+                                <img src='/Images/icons8-user-48.png' className="w-10 h-10" alt="Profile" />
                             </div>
 
 
@@ -93,7 +93,7 @@ const LegendHeader = ({ onLanguageChange }) => {
                                             <span className="font-bold text-slate-800 text-md whitespace-nowrap">{daysLeft} {t.days}</span>
                                         </div>
                                         <div className="flex-1 bg-transparent rounded-r-full border-2 border-[#FFD369] flex items-center justify-center h-full">
-                                            <img src='/public/Images/icons8-hourglass-64(1).png' className="w-8 h-8" />
+                                            <img src='/Images/icons8-hourglass-64(1).png' className="w-8 h-8" />
                                         </div>
                                     </div>
                                 ) : (
@@ -110,7 +110,7 @@ const LegendHeader = ({ onLanguageChange }) => {
                         {/* بالا سمت راست - لوگو */}
                         <div className="flex flex-col items-center">
                             <img
-                                src='/public/images/Picsart_25-07-23_01-00-21-915.png'
+                                src='/Images/Picsart_25-07-23_01-00-21-915.png'
                                 className='w-24 h-[82px]'
                                 alt="Legend Logo"
                             />
@@ -121,7 +121,7 @@ const LegendHeader = ({ onLanguageChange }) => {
             </div>
 
             {/* انتخاب زبان - خارج از هدر */}
-            <div className="absolute top-[205px] right-6 z-50">
+            <div className="absolute top-[205px] right-6 ">
                 <div className="relative">
                     <button
                         onClick={() => setDropdownOpen(!dropdownOpen)}

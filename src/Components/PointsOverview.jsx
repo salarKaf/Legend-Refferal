@@ -1,5 +1,5 @@
 import React from 'react';
-import pointsImage from '/public/Images/Polish_۲۰۲۵۰۷۲۴_۰۰۰۸۳۸۲۹۰.png';
+import pointsImage from '/Images/Polish_۲۰۲۵۰۷۲۴_۰۰۰۸۳۸۲۹۰.png';
 export default function PointsOverview() {
   const pointsData = {
     balancePoints: 2,

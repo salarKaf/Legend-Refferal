@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import Icon from '/public/Images/icons8-earning-48.png'
+import Icon from '/Images/icons8-earning-48.png'
 const MonthlyTierEarningsChart = () => {
   const [data, setData] = useState([
     { month: 'April', earnings: 30, monthFa: 'فروردین', tier: 'Tier 1' },

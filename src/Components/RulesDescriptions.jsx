@@ -1,5 +1,5 @@
 import React from 'react';
-import RulesImage from '/public/Images/point.png'
+import RulesImage from '/Images/point.png'
 
 export default function RulesDescriptions() {
   const rules = [

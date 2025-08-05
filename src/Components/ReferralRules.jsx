@@ -1,5 +1,5 @@
 import React from 'react';
-import RulesImage from '../../public/Images/rules.png'
+import RulesImage from '/Images/rules.png'
 
 export default function ReferralRules() {
   const rules = [

@@ -10,7 +10,6 @@ const LegendHeader = ({ onLanguageChange }) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const navigate = useNavigate();
 
-    // متن‌ها برای دو زبان
     const texts = {
         fa: {
             days: 'روز',
@@ -38,27 +37,23 @@ const LegendHeader = ({ onLanguageChange }) => {
     }, [daysLeft]);
 
     const handleLanguageChange = (newLang) => {
-        changeLanguage(newLang); // درست شد 🎉
+        changeLanguage(newLang);
         setDropdownOpen(false);
         if (onLanguageChange) {
             onLanguageChange(newLang);
         }
     };
 
-
     return (
-        <div className={`relative  w-full ${language === 'fa' ? 'rtl' : 'ltr'}` }>
-            {/* Header با گرادیانت */}
-            <div className="relative h-[370px] overflow-visible  ">
-                {/* پس‌زمینه با گرادیانت */}
+        <div className={`relative w-full ${language === 'fa' ? 'rtl' : 'ltr'}`}>
+            <div className="relative h-[370px] overflow-visible">
                 <div
-                    className="absolute inset-0 "
+                    className="absolute inset-0"
                     style={{
                         background: 'linear-gradient(to bottom, #222831 29%, #2E3643 47%, #3E495A 70%, #697B97 100%)'
                     }}
                 >
-                    {/* شکل منحنی پایین */}
-                    <div className="absolute bottom-0 w-full ">
+                    <div className="absolute bottom-0 w-full">
                         <svg
                             viewBox="0 0 1440 100"
                             className="w-full h-24"
@@ -72,11 +67,8 @@ const LegendHeader = ({ onLanguageChange }) => {
                     </div>
                 </div>
 
-                {/* محتوای داخل هدر */}
-                <div className="relative z-10 px-6 py-6 h-full ">
+                <div className="relative z-10 px-6 py-6 h-full">
                     <div className="flex justify-between items-start h-full">
-
-                        {/* بالا سمت چپ - پروفایل و ساعت شنی */}
                         <div className="flex items-center gap-1">
                             <div
                                 className="p-3 rounded-full cursor-pointer"
@@ -84,7 +76,6 @@ const LegendHeader = ({ onLanguageChange }) => {
                             >
                                 <img src='/Images/icons8-user-48.png' className="w-10 h-10" alt="Profile" />
                             </div>
-
 
                             <div className="relative">
                                 {!isExpired ? (
@@ -107,7 +98,6 @@ const LegendHeader = ({ onLanguageChange }) => {
                             </div>
                         </div>
 
-                        {/* بالا سمت راست - لوگو */}
                         <div className="flex flex-col items-center">
                             <img
                                 src='/Images/Picsart_25-07-23_01-00-21-915.png'
@@ -118,48 +108,47 @@ const LegendHeader = ({ onLanguageChange }) => {
                         </div>
                     </div>
                 </div>
-            </div>
 
-            {/* انتخاب زبان - خارج از هدر */}
-            <div className="absolute top-[205px] right-6 ">
-                <div className="relative">
-                    <button
-                        onClick={() => setDropdownOpen(!dropdownOpen)}
-                        className="bg-gray-500 hover:bg-gray-400 text-white px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-colors text-xs"
-                    >
-                        <span className="text-xs">{language === 'fa' ? 'فا' : 'En'}</span>
-                        <ChevronDown className={`w-3 h-3 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
-                    </button>
+                <div className="absolute top-[205px] right-6 z-50">
+                    <div className="relative">
+                        <button
+                            onClick={() => setDropdownOpen(!dropdownOpen)}
+                            className="bg-gray-500 hover:bg-gray-400 text-white px-3 py-1.5 rounded-md flex items-center gap-1.5 transition-colors text-xs"
+                        >
+                            <span className="text-xs">{language === 'fa' ? 'فا' : 'En'}</span>
+                            <ChevronDown className={`w-3 h-3 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                        </button>
 
-                    {dropdownOpen && (
-                        <div className="absolute top-full mt-1 right-0 bg-gray-600 rounded-md shadow-lg min-w-[80px]">
-                            <div
-                                onClick={() => handleLanguageChange('fa')}
-                                className={`px-3 py-2 text-xs cursor-pointer hover:bg-gray-500 ${language === 'fa' ? 'bg-gray-400 text-gray-900' : 'text-white'
+                        {dropdownOpen && (
+                            <div className="absolute top-full mt-1 right-0 bg-gray-600 rounded-md shadow-lg min-w-[80px] z-50">
+                                <div
+                                    onClick={() => handleLanguageChange('fa')}
+                                    className={`px-3 py-2 text-xs cursor-pointer hover:bg-gray-500 rounded-t-md ${
+                                        language === 'fa' ? 'bg-gray-400 text-gray-900' : 'text-white'
                                     }`}
-                            >
-                                فارسی
-                            </div>
-                            <div
-                                onClick={() => handleLanguageChange('en')}
-                                className={`px-3 py-2 text-xs cursor-pointer hover:bg-gray-500 ${language === 'en' ? 'bg-gray-400 text-gray-900' : 'text-white'
+                                >
+                                    فارسی
+                                </div>
+                                <div
+                                    onClick={() => handleLanguageChange('en')}
+                                    className={`px-3 py-2 text-xs cursor-pointer hover:bg-gray-500 rounded-b-md ${
+                                        language === 'en' ? 'bg-gray-400 text-gray-900' : 'text-white'
                                     }`}
-                            >
-                                English
+                                >
+                                    English
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </div>
             </div>
 
-            {/* بستن درپ داون با کلیک روی صفحه */}
             {dropdownOpen && (
                 <div
                     className="fixed inset-0 z-40"
                     onClick={() => setDropdownOpen(false)}
                 />
             )}
-
         </div>
     );
 };

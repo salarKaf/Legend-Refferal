@@ -2,6 +2,7 @@ import { useLanguage } from "../context/LanguageContext";
 import React from 'react';
 import ReferralTree from '../Components/ReferralTree';
 import MyReferrals from '../Components/MyReferrals';
+
 const Referral = () => {
   const { language } = useLanguage();
 

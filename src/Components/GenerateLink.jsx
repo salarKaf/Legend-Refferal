@@ -112,7 +112,7 @@ const ReferralLinkGenerator = () => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-6 z-30">
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-6 z-50 ">
                     <div className="bg-[#222831]/70 backdrop-blur-lg border border-white/20 rounded-2xl p-8 max-w-md w-full shadow-[0_25px_50px_-12px_rgba(0,0,0,0.6)] ring-1 ring-white/10">
                         <div className={`text-center ${isRTL ? 'text-right' : ''}`}>
                             <h3 className={` text-white mb-6 text-center ${language === 'en' ? 'text-4xl' : 'text-xl'}`}>

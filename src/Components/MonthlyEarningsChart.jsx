@@ -143,7 +143,7 @@ const MonthlyEarningsChart = () => {
         {/* هدر */}
         <div className="mt-8">
           <div className="flex items-start justify-end gap-1 mr-5">
-            <h1 className={`font-bold text-gray-800 ${language === 'fa' ? 'font-lahzeh text-lg' : 'font-gidugu text-3xl'}`}>
+            <h1 className={` text-gray-800 ${language === 'fa' ? 'font-lahzeh font-bold text-lg' : 'font-gidugu text-3xl'}`}>
               {texts[language].title}
             </h1>
             <img src='/Images/icons8-euro-money-50(1).png' className="w-8 h-8" alt="money icon" />
@@ -183,7 +183,7 @@ const MonthlyEarningsChart = () => {
                 tick={{
                   fontSize: language === 'fa' ? 16 : 24,
                   fill: '#374151',
-                  fontWeight: 'bold',
+                  fontWeight: language === 'fa' ? 'bold' : 'thin' ,
                   dx: -10,
                   fontFamily: language === 'fa' ? 'lahzeh' : 'gidugu'
                 }}

@@ -15,32 +15,32 @@ export default function ReferralRules() {
         {
           title: "First 2 each group",
           points: "1pts",
-          value: "$30",
-          perPoint: "$30"
+          value: "30$",
+          perPoint: "30$"
         },
         {
           title: "2nd & 3rd", 
           points: "2pts",
-          value: "$40",
-          perPoint: "$20"
+          value: "40$",
+          perPoint: "20$"
         },
         {
           title: "4th-7th",
           points: "4pts", 
-          value: "$40",
-          perPoint: "$10"
+          value: "40$",
+          perPoint: "10$"
         },
         {
           title: "8th-15th",
           points: "8pts",
-          value: "$40", 
-          perPoint: "$5"
+          value: "40$", 
+          perPoint: "5$"
         },
         {
           title: "16th-65th",
           points: "50pts",
-          value: "$50",
-          perPoint: "$1"
+          value: "50$",
+          perPoint: "1$"
         }
       ]
     },
@@ -53,32 +53,32 @@ export default function ReferralRules() {
         {
           title: "۲ نفر اول هر گروه",
           points: "۱ امتیاز",
-          value: "$۳۰",
-          perPoint: "$۳۰"
+          value: "۳۰$",
+          perPoint: "۳۰$"
         },
         {
           title: "دوم و سوم", 
           points: "۲ امتیاز",
-          value: "$۴۰",
-          perPoint: "$۲۰"
+          value: "۴۰$",
+          perPoint: "۲۰$"
         },
         {
           title: "چهارم تا هفتم",
           points: "۴ امتیاز", 
-          value: "$۴۰",
-          perPoint: "$۱۰"
+          value: "۴۰$",
+          perPoint: "۱۰$"
         },
         {
           title: "هشتم تا پانزدهم",
           points: "۸ امتیاز",
-          value: "$۴۰", 
-          perPoint: "$۵"
+          value: "۴۰$", 
+          perPoint: "۵$"
         },
         {
           title: "شانزدهم تا شصت و پنجم",
           points: "۵۰ امتیاز",
-          value: "$۵۰",
-          perPoint: "$۱"
+          value: "۵۰$",
+          perPoint: "۱$"
         }
       ]
     }

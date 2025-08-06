@@ -1,26 +1,45 @@
 import { User, DollarSign } from 'lucide-react';
+import { useLanguage } from "../context/LanguageContext";
 
 const MyReferrals = () => {
+
+    const { language } = useLanguage();
+
+    // تابع تبدیل اعداد انگلیسی به فارسی
+    const convertToPersianNumbers = (number) => {
+        const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+        return number.toString().replace(/\d/g, (digit) => persianDigits[parseInt(digit)]);
+    };
+
+    const texts = {
+        en: {
+            title: "My Referrals",
+        },
+        fa: {
+            title: "زیرمجموعه های من",
+        }
+    };
+    const currentTexts = texts[language];
 
     const referralData = [
         // سطح اول - بیشتر از 6 تا برای تست
         [
-            { id: 1, avatar: null, amount: 30 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 3, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 4, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 2, avatar: null, amount: 30  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 5, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 6, avatar: null, amount: 20  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 7, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 8, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 9, avatar: null, amount: 10  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 10, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 11, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 12, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 13, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 14, avatar: null, amount: 10 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
-            { id: 15, avatar: null, amount: 5  , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png'},
-            { id: 16, avatar: null, amount: 25 , avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' }
+            { id: 1, avatar: null, amount: 30, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 3, avatar: null, amount: 20, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 4, avatar: null, amount: 20, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 2, avatar: null, amount: 30, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 5, avatar: null, amount: 20, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 6, avatar: null, amount: 20, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 7, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 8, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 9, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 10, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 11, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 12, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 13, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 14, avatar: null, amount: 10, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 15, avatar: null, amount: 5, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' },
+            { id: 16, avatar: null, amount: 25, avatar: '/Images/Polish_۲۰۲۵۰۷۲۳_۱۷۵۵۳۴۰۱۴.png' }
         ],
     ];
 
@@ -39,7 +58,9 @@ const MyReferrals = () => {
 
             {/* مبلغ دلار - کوچیک‌تر شده */}
             <div className="mt-2 bg-white border-2 border-gray-300 rounded-full px-2 py-[0.8px] flex items-center gap-1 shadow-sm">
-                <span className="font-bold text-sm text-gray-800">{person.amount}</span>
+                <span className={`font-bold text-sm text-gray-800 ${language === 'fa' ? 'font-lahzeh' : ''}`}>
+                    {language === 'fa' ? convertToPersianNumbers(person.amount) : person.amount}
+                </span>
                 <img src='/Images/icons8-coin-64.png' className="w-[13px] h-[13px] text-yellow-500" />
             </div>
         </div>
@@ -52,7 +73,7 @@ const MyReferrals = () => {
             const rowPeople = people.slice(i, i + 6);
             const rowIndex = Math.floor(i / 6);
             const isLeftToRight = rowIndex % 2 === 0;
-            
+
             const displayPeople = isLeftToRight ? rowPeople : [...rowPeople].reverse();
 
             rows.push(
@@ -68,12 +89,12 @@ const MyReferrals = () => {
                                 // محاسبه موقعیت هر آیتم برای توزیع یکسان
                                 const totalItems = Math.min(rowPeople.length, 6);
                                 const itemWidth = `${100 / totalItems}%`;
-                                
+
                                 return (
-                                    <div 
-                                        key={person.id} 
+                                    <div
+                                        key={person.id}
                                         className="flex flex-col items-center relative"
-                                        style={{ 
+                                        style={{
                                             width: itemWidth,
                                             minWidth: '50px' // حداقل عرض برای جلوگیری از فشردگی
                                         }}
@@ -108,10 +129,15 @@ const MyReferrals = () => {
             <div className="max-w-full mx-auto">
                 {/* هدر */}
                 <div className="flex justify-end  space-x-2 mb-6  sm:mb-12 ">
-                    <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 flex items-center justify-center gap-2 sm:gap-3">
-                        My Referrals
-                        <img src='/Images/icons8-user-30.png' className="w-8 h-8 sm:w-8 sm:h-8 " />
+
+
+                    <h1 className={` text-gray-900 ${language === 'fa' ? 'font-lahzeh  text-md font-semibold pt-2' : 'font-gidugu text-3xl '}`}>
+
+                        {currentTexts.title}
+
                     </h1>
+                    <img src='/Images/icons8-user-30.png' className="w-8 h-8 sm:w-8 sm:h-8 " />
+
                 </div>
 
                 {/* درخت ارجاع */}

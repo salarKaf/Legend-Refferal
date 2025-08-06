@@ -75,8 +75,8 @@ const Home = () => {
         <div className={`absolute -top-14 left-4 transform -rotate-12`}>
           <div className="relative">
             <div className={`relative bg-[#EEEEEE] rounded-2xl px-9  shadow-lg border border-black/50   ${language === 'fa' ? ' py-4' : 'py-3'}`}>
-              <span className={`font-bold text-gray-800 ${language === 'fa' ? ' text-lg font-medium' : 'text-4xl font-normal'}`}>
-                <span className={`${language === 'fa' ? 'text-[22px] font-medium ' : 'text-4xl font-normal'}`}>{language === 'fa' ? '۱۰$' : '10$'}</span>
+              <span className={`font-bold text-gray-800 ${language === 'fa' ? ' text-lg font-medium' : 'text-3xl font-normal'}`}>
+                <span className={`${language === 'fa' ? 'text-[18px] font-medium ' : 'text-3xl font-normal'}`}>{language === 'fa' ? '۱۰$' : '10$'}</span>
                 <span className={`${language === 'fa' ? 'ml-7 ' : 'ml-5'}`}>{texts[language].today}</span>
               </span>
               <div className="absolute bottom-3 left-4 w-2 h-2 bg-black rounded-full"></div>
@@ -115,7 +115,7 @@ const Home = () => {
               <div className={`text-gray-900 ${language === 'fa' ? 'text-xl font-semibold' : 'text-4xl '}`}>
                 {language === 'fa' ? '۱۵' : '15'}
               </div>
-              <div className={`text-gray-700  ${language === 'fa' ? 'text-lg font-medium' : 'text-[28px]'}`}>{texts[language].totalPoints}</div>
+              <div className={`text-gray-700  ${language === 'fa' ? 'text-lg font-medium' : 'text-[28px] pl-10'}`}>{texts[language].totalPoints}</div>
             </div>
           </div>
         </div>
@@ -206,14 +206,14 @@ const Home = () => {
         <div className="flex-1">
           {/* متن توتال رفرال - بالا و راست‌چین */}
           <div className="text-right pr-4 mb-2">
-            <div className={`text-gray-800 ${language === 'fa' ? 'text-base font-semibold' : 'text-3xl font-bold'}`}>
+            <div className={`text-gray-800 ${language === 'fa' ? 'text-base font-semibold' : 'text-3xl '}`}>
               {texts[language].totalReferrals}
             </div>
           </div>
 
           {/* عدد و نفر - وسط */}
           <div className="text-center">
-            <div className={`text-gray-800 ${language === 'fa' ? 'text-xl font-semibold' : 'text-4xl font-bold'}`}>
+            <div className={`text-gray-800 ${language === 'fa' ? 'text-xl font-semibold' : 'text-4xl '}`}>
               {language === 'fa' ? '۱۲' : '12'}
               <span
                 className={`text-gray-500 mr-1 ml-1 ${language === 'fa' ? 'text-sm font-medium' : 'text-sm'}`}

@@ -88,7 +88,7 @@ export default function PointsOverview() {
                 <>
                   <div className="text-right">
                     <span className="text-sm font-medium text-gray-900">
-                      ${pointsData.balanceValue}
+                      {pointsData.balanceValue}$
                     </span>
                   </div>
                   <div className="text-right">
@@ -118,7 +118,7 @@ export default function PointsOverview() {
                   </div>
                   <div className="text-center">
                     <span className="text-[27px]  text-gray-900">
-                      ${pointsData.balanceValue}
+                      {pointsData.balanceValue}$
                     </span>
                   </div>
                 </>
@@ -131,12 +131,12 @@ export default function PointsOverview() {
                 <>
                   <div className="text-right">
                     <span className="text-sm font-medium  text-gray-900">
-                      ${pointsData.totalValue}
+                      {pointsData.totalValue}$
                     </span>
                   </div>
                   <div className="text-right">
                     <span className="text-sm font-medium text-gray-900">
-                      {pointsData.totalPoints} {currentTexts.pts}
+                      {currentTexts.pts} {pointsData.totalPoints}
                     </span>
                   </div>
                   <div className="col-span-2 flex items-center gap-3 justify-end">
@@ -161,7 +161,7 @@ export default function PointsOverview() {
                   </div>
                   <div className="text-center">
                     <span className="text-[27px]  text-gray-900">
-                      ${pointsData.totalValue}
+                      {pointsData.totalValue}$
                     </span>
                   </div>
                 </>
